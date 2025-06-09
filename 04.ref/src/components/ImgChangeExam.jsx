@@ -21,7 +21,7 @@ const ImgChangeExam = () => {
     }
 
     return (
-        <div>
+        <div onClick={handleClick}>
             <p>희망하는 사진이 있으신가요?</p>
             <form>
                 <input type="text" ref={keywordRef}/>
