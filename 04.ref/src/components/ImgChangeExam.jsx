@@ -23,7 +23,7 @@ const ImgChangeExam = () => {
     return (
         <div>
             <p>희망하는 사진이 있으신가요?</p>
-            <form>
+            <form onClick={handleClick}>
                 <input type="text" ref={keywordRef}/>
                 <input type="submit" value="변경"/>
             </form>
@@ -31,7 +31,8 @@ const ImgChangeExam = () => {
                 <img 
                     style={{width:150, height:150}}
                     ref={imgRef}
-                    src="https://t3.ftcdn.net/jpg/07/56/83/92/360_F_756839279_FWX5NijrhIP9I3IUTNC6ZvCS6P0lEieY.jpg"/>
+                    src="https://t3.ftcdn.net/jpg/07/56/83/92/360_F_756839279_FWX5NijrhIP9I3IUTNC6ZvCS6P0lEieY.jpg"
+                />
             </p>
         </div>
     )
