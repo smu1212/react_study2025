@@ -7,6 +7,7 @@ import { useState } from "react";
 // 로그인됐으면 넘어가는 상세 페이지 -> App.jsx 참조
 // /goods/상품id
 const GoodsDetail = () => {
+  
   // 상품정보를 저장하는 state를 정의하시오.
   // state명: good
   const [good, setGood] = useState(null);
@@ -20,7 +21,7 @@ const GoodsDetail = () => {
   // getGoods함수를 구현하시오.
   // 요청URL : http://localhost:3000/goods_list/상품id
   const getGood = async () => {
-    let res = await axios.get(`http://localhost:3000/goods_list/${id}`);
+    let res = await axios.get(`http://54.180.250.70:8089/lunch/api/goods_list/${id}`);
     let data = res.data;
 
     console.log(data);

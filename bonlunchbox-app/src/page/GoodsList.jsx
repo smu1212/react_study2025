@@ -10,7 +10,7 @@ const GoodsList = () => {
   const [goods, setGoods] = useState();
 
   const getGoodsList = async () => {
-    const GOODS_URL = "http://localhost:3000/goods_list";
+    const GOODS_URL = "http://54.180.250.70:8089/lunch/api/goods_list";
       // axios를 이용해 url에 있는 정보 가져오기
     let res = await axios.get(GOODS_URL);
     // 가져온 정보의 데이터를 저장
